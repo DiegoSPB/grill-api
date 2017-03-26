@@ -7,7 +7,7 @@ module Api::V1
     def index
       @name =  Naming.find_by(name: params[:name])
       if @name
-        render json: @name.code
+        render json: @name
       end
     end
 
